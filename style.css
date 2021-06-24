@@ -1,0 +1,19 @@
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'raleway';
+.introduction
+{
+	color:#F2F2F2
+}
+h1
+{
+	font-size:  1.3em;
+}
+p
+{
+	font-size: 1em; 
+}
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: underline;
+   color: green;
+}
