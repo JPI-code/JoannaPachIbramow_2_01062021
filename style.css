@@ -1,8 +1,20 @@
-@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+@font-face {/* Définition d'une nouvelle police nommée Raleway Regular */
     font-family: 'raleway';
+    src: url('FONT/static/Raleway-Regular.ttf') format('ttf');
+} 
+/* Balise body, donc sur TOUTE la page */
+body
+{
+    background-color: white; /* Le fond de la page sera noir */
+    color: black; /* Le texte de la page sera blanc */
+}     
+.menu
+{
+    text-align: right;
+}
 .introduction
 {
-	color:#F2F2F2
+	color:black
 }
 h1
 {
@@ -12,8 +24,13 @@ p
 {
 	font-size: 1em; 
 }
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: black;
+}
 a:hover /* Apparence au survol des liens */
 {
-   text-decoration: underline;
-   color: green;
+   text-decoration: overline;
+   color: blue;
 }
