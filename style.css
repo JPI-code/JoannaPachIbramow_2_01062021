@@ -7,22 +7,25 @@ body
 {
     background-color: white; /* Le fond de la page sera noir */
     color: black; /* Le texte de la page sera blanc */
-}     
-.menu
-{
-    text-align: right;
 }
+nav
+#conteneur
+{ display: flex;
+    justify-content: flex-end;
+    width: 70%;
+}
+
 .introduction
 {
 	color:black
 }
 h1
 {
-	font-size:  1.3em;
+	font-size:  1em;
 }
 p
 {
-	font-size: 1em; 
+	font-size: 0.8em; 
 }
 a /* Liens par défaut (non survolés) */
 {
@@ -33,4 +36,24 @@ a:hover /* Apparence au survol des liens */
 {
    text-decoration: overline;
    color: blue;
+}
+#Firstcolumn
+{ 
+    display: flex;
+    justify-content: flex-start;
+}
+#Secondcolumn
+{ 
+    display: flex;
+    justify-content: center;
+}
+#Thirdcolumn
+{ 
+    display: flex;
+    justify-content: flex-end;
+}
+footer
+{
+    background-color: #F2F2F2
+
 }
