@@ -54,7 +54,7 @@
     </header>
     <!-- END OF HEADER -->
 
-    <!-- BEGINNING OF MAIN -->
+    <!-- BEGINNING OF MAIN : ALL CONTENT APART FROM HEADER AND FOOTER-->
 
     <main class="main">
         <!-- SEARCH TOOL-->
@@ -106,24 +106,27 @@
                 <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <!-- SEARCH -->
+        <!-- END OF SEARCH PART-->
 
-
-        <div class="housing-wrapper">
+<!--BEGINNING OF THE SECTION HOUSING & POPULAR-->
+<div class="housing-and-popular">
+        <!-- <div class="housing-wrapper"> -->
+            <!-- SECTION FOR HOUSING ONLY-->
             <section class="lodging-container">
-                <div class="test"><h1 id="hébergements">Hébergements à Marseille</h1></div>
+                <div class="housing-text"><h1 id="hébergements">Hébergements à Marseille</h1></div>
                 
                     <article class="lodging-card">
 
-                        <figure>
+                        <figure class="lodging-card-cover">
                             <a href="images/auberge_large.jpg"><img class="lodging-image" src="images/auberge_mini.jpg"
                                     alt="Photo une chambre avec un lit superposé avec une fenêtre qui donne sur la ville" title="Cliquez pour agrandir" /></a>
                             <figcaption>
                                 <!-- TO BE CORRECTED: figures dont scale properly when using <h> in figcaption-->
                                 <h5>Aubèrge la Cannebière </h5><br />
-                                <h6>Nuit à partir de 25€</h6>
+                               
                             </figcaption>
                         </figure>
+                        <p>Nuit à partir de <strong>52€</strong></p>
                     </article>
                     <article class="lodging-card">
                         <figure>
@@ -131,8 +134,8 @@
                                     src="images/hotelduport_mini.jpg" alt="Photo d'une chambre à l'Hôtel du Port avec deux lits simples, séparés d'une table de chêvet"
                                     title="Cliquez pour agrandir" /></a>
                             <figcaption>
-                                <style="font-weight: bold;">Hôtel du Port</style> <br />
-                                    Nuit à partir de 52€
+                                <p>Hôtel du Port<br />
+                                    Nuit à partir de 52€</p> 
                             </figcaption>
                         </figure>
                     </article>
@@ -142,6 +145,7 @@
                                 src="images/hotellesmouettes_mini.jpg" alt="Photo d'une chambre à l'Hôtel Les Mouettes avec un lit double et une grande armoire"
                                 title="Cliquez pour agrandir" /></a>
                             <figcaption>
+                                Hôtel les Mouettes <br />
                                     Nuit à partir de 23€
                         </figcaption>
                     </figure>
@@ -176,23 +180,180 @@
                             </figcaption>
                         </figure>
                     </article>
+                    <div class="housing-text"> <h3>Afficher plus</h3></div>
+                  
+
                 </section>
-            </div>
             
 
             <div class="popular-container">
                 <h1>Les plus populaires</h1>
-                <article>
+                <article class="popular-card">
                     <a href="images/hotellesoleil_large.jpg">
                         <div class="popular-image">
                             <img src="images/hotellesoleil_mini.jpg" alt="Photo d'une chambre à l'Hôtel Le Soleil du matin avec un lit double avec un mirror au-dessous de celui-ci"
                             title="Cliquez pour agrandir" />
                         </div>
                     </a>
+                    <p><strong>Hôtel Le Soleil du matin</strong><br />
+                    Nuit à partir <strong>128€</strong></p>
+                    <div class="hostingMainCardGrade">
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"></i>
+                        <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"></i>
+                        </div>
+                 </article>
+
+                 <article class="popular-card">
+                    <a href="images/hotellesoleil_large.jpg">
+                        <div class="popular-image">
+                            <img src="images/hotellesoleil_mini.jpg" alt="Photo d'une chambre à l'Hôtel Le Soleil du matin avec un lit double avec un mirror au-dessous de celui-ci"
+                            title="Cliquez pour agrandir" />
+                        </div>
+                    </a>
+                    <p>Hôtel Le Soleil du matin<br />
+                    Nuit à partir <strong>128€</strong></p>
+                 </article>
+
+                 <article class="popular-card">
+                    <a href="images/hotellesoleil_large.jpg">
+                        <div class="popular-image">
+                            <img src="images/hotellesoleil_mini.jpg" alt="Photo d'une chambre à l'Hôtel Le Soleil du matin avec un lit double avec un mirror au-dessous de celui-ci"
+                            title="Cliquez pour agrandir" />
+                        </div>
+                    </a>
+                    <p>Hôtel Le Soleil du matin<br />
+                    Nuit à partir <strong>128€</strong></p>
                  </article>
                 </div>
         </div>
-        <h1 id="Activités">Activités à Marseille</h1>
+    <!-- VERSION  WITH FLEXBOX BEGINNING OF THE SECTION "ACTIVITIES" -->
+    <section class="activity" id="activity">
+        <h2 class="activityTitle">Activités à Marseille</h2>
+        <div class="activity-content">
+        <div class="first-column">
+        <a href="#" class="activityCard activityCard1">
+          <div class="activityCardWrapimg">
+            <img 
+              class="activityCardWrapimgImg"
+              src="images/vieux_port.jpg" 
+              alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+            >
+          </div>
+          <h3 class="activityCardTitle">Vieux Port</h3>
+        </a>
+    </div>
+    <div class="second-column">
+        <a href="#" class="activityCard activityCard2">
+            <div class="activityCardWrapimg">
+              <img 
+                class="activityCardWrapimgImg"
+                src="images/fort.jpg" 
+                alt="une colline rocailleuse beige avec un fort au sommet" 
+              >
+            </div>
+            <h3 class="activityCardTitle">Fort de Pomègues</h3>
+          </a>
+    </div>
+    <div class="third-column">
+        <a href="#" class="activityCard activityCard2">
+            <div class="activityCardWrapimg">
+              <img 
+                class="activityCardWrapimgImg"
+                src="images/fort.jpg" 
+                alt="une colline rocailleuse beige avec un fort au sommet" 
+              >
+            </div>
+            <h3 class="activityCardTitle">Fort de Pomègues</h3>
+          </a>
+    </div>
+    <div class="fourth-column">
+        <a href="#" class="activityCard activityCard2">
+            <div class="activityCardWrapimg">
+              <img 
+                class="activityCardWrapimgImg"
+                src="images/fort.jpg" 
+                alt="une colline rocailleuse beige avec un fort au sommet" 
+              >
+            </div>
+            <h3 class="activityCardTitle">Fort de Pomègues</h3>
+          </a>
+    </div>
+    </div>
+    
+         
+    <!--BEGINNING OF THE SECTION "ACTIVITIES" -->  
+    <!-- </section>
+
+
+
+        
+        <section class="activity" id="activity">
+            <h2 class="activityTitle">Activités à Marseille</h2>
+            <a href="#" class="activityCard activityCard1">
+              <div class="activityCardWrapimg">
+                <img 
+                  class="activityCardWrapimgImg"
+                  src="images/vieux_port.jpg" 
+                  alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+                >
+              </div>
+              <h3 class="activityCardTitle">Vieux Port</h3>
+            </a>
+            <a href="#" class="activityCard activityCard2">
+                <div class="activityCardWrapimg">
+                  <img 
+                    class="activityCardWrapimgImg"
+                    src="images/fort.jpg" 
+                    alt="une colline rocailleuse beige avec un fort au sommet" 
+                  >
+                </div>
+                <h3 class="activityCardTitle">Fort de Pomègues</h3>
+              </a>
+              <a href="#" class="activityCard activityCard1">
+                <div class="activityCardWrapimg">
+                  <img 
+                    class="activityCardWrapimgImg"
+                    src="images/vieux_port.jpg" 
+                    alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+                  >
+                </div>
+                <h3 class="activityCardTitle">Vieux Port</h3>
+              </a>
+              <a href="#" class="activityCard activityCard1">
+                <div class="activityCardWrapimg">
+                  <img 
+                    class="activityCardWrapimgImg"
+                    src="images/vieux_port.jpg" 
+                    alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+                  >
+                </div>
+                <h3 class="activityCardTitle">Vieux Port</h3>
+              </a>
+              <a href="#" class="activityCard activityCard1">
+                <div class="activityCardWrapimg">
+                  <img 
+                    class="activityCardWrapimgImg"
+                    src="images/vieux_port.jpg" 
+                    alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+                  >
+                </div>
+                <h3 class="activityCardTitle">Vieux Port</h3>
+              </a>
+              <a href="#" class="activityCard activityCard1">
+                <div class="activityCardWrapimg">
+                  <img 
+                    class="activityCardWrapimgImg"
+                    src="images/vieux_port.jpg" 
+                    alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond" title="Cliquez pour agrandir"
+                  >
+                </div>
+                <h3 class="activityCardTitle">Vieux Port</h3>
+              </a>
+              
+        </section> -->
 
 
 

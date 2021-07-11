@@ -45,42 +45,89 @@ nav .container {
 .menu1:hover {
   border-top: 2px solid #0065fc;
   padding-top: 20px; 
+  padding-bottom: 20px;
 }
-.housing-wrapper {
+.housing-and-popular{
+  display: flex;
+  flex-flow: row nowrap;
+  border: red solid 2px;
+  justify-content: space-between;
+}
+/* .housing-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+justify-content: space-between;
   height: 500px;
+  float: left; */
 
-}
 .lodging-container {
-    justify-content: space-between;
+  justify-content: space-evenly;
   width: 70%;
-  background-color: #F2F2F2;
+  background-color: #4cd639;
   display: flex;
   flex-flow: row wrap;
   border-radius: 15px;
+  gap: 0.5rem;
 }
 .lodging-card {
   width: 300px;
   height: 200px;
   background-color:white;
-  border-radius: 15px;
+  border-radius: 1.25rem;
+  border: solid 2px chocolate;
 }
-.test{
+.lodging-card figcaption p{
+  margin-left: 4%;
+}
+.lodging-card-cover {
+  border-radius: 1.25rem;
+  width: 98%;
+  height: 75%;
+  margin:1%;
+}
+.lodging-card-cover img{
+  border-radius: 1.25rem;
+  width: 100%;
+  /*to be adjusted*/
+  height: 7rem;
+}
+
+.housing-text{
     width: 100%;
+    margin-left: 2%;
 }
 .lodging-image {
   width: 100%;
   object-fit: cover;
 }
-
+.hostingMainCardGrade {
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+.hostingMainCardGradeIcon[data-active=true] {
+  color: #0065FC;
+}
+.hostingMainCardGradeIcon[data-active=false] {
+  color: #d9d9d9;
+}
 .popular-container {
-    float:right;
-  width: 20%;
-  background-color: #F2F2F2.;
+  display: flex;
+  flex-flow: column nowrap;
+  float:right;
+  width: 25%;
+  background-color: #F2F2F2;
+  border-radius: 1.25rem;
+}
+.popular-card{
+  /* width: 13rem; */
+  margin: 5% 5% 0% 5%;
+  background-color: white;
+  border-radius: 1.25rem;
 }
 .popular-image{
+  float: left;
+  margin-right: 5%;
+}
+.popular-image img{ 
     width: 100px;
     height: 100px;
 }
@@ -269,7 +316,55 @@ h1 {
 p {
   font-size: 0.8em;
 }
+/* flexbox activity */
+.activity {
+  display: flex;
+  flex-flow: row wrap;
+}
+.activity img{
+  width: 100%;
+}
+.activityTitle{
+  width: 100%;
+}
+.activity-content{
+  display: flex;
+  flex-flow: row nowrap;
+}
 
+
+/* .activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.activityTitle {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCard:hover {
+  transform: scale(1.01);
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimgImg {
+ position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+} */
 .footer {
   background-color: #f2f2f2;
   width: 100%;
