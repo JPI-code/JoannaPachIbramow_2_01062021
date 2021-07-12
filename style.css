@@ -63,7 +63,7 @@ justify-content: space-between;
 .lodging-container {
   justify-content: space-evenly;
   width: 70%;
-  background-color: #4cd639;
+  background-color: #F2F2F2;
   display: flex;
   flex-flow: row wrap;
   border-radius: 15px;
@@ -84,6 +84,9 @@ justify-content: space-between;
   width: 98%;
   height: 75%;
   margin:1%;
+}
+.lodging-card-cover h5{
+  margin: 5%;
 }
 .lodging-card-cover img{
   border-radius: 1.25rem;
@@ -115,10 +118,12 @@ justify-content: space-between;
   display: flex;
   flex-flow: column nowrap;
   float:right;
+  justify-content:space-evenly;
   width: 25%;
   background-color: #F2F2F2;
   border-radius: 1.25rem;
 }
+
 .popular-card{
   /* width: 13rem; */
   margin: 5% 5% 0% 5%;
@@ -133,13 +138,26 @@ justify-content: space-between;
     width: 100px;
     height: 100px;
 }
+
 .main {
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
 }
-
+@media screen and (max-width: 1200px) {
+  .housing-and-popular{
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+  }
+  .lodging-container{
+    width: 100%;
+  }
+  .main{
+    padding: auto;
+  }
+  }
 .searchHeaderTitle {
   margin-bottom: 0.5rem;
 }
@@ -332,11 +350,53 @@ p {
 .activity-content{
   display: flex;
   flex-flow: row nowrap;
-}
-.activityCard activityCard1{
-  border-radius: 1.25rem;
+  border: solid 2px blue;
+  justify-content: space-between;
 }
 
+.column{
+  width: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+.activityCard{
+  border-radius: 1.25rem;
+  overflow:hidden;
+  box-shadow: 0 0 20px #0000002e;
+  /* border: solid 2px red; */
+  /* width:20%; */
+}
+
+/* .activityCard img{
+  height: 10px;
+  width: 10px;
+} */
+
+.activityCardWrapimgImg{
+  /* border: solid 2px green; */
+  object-fit: none;
+  object-position: center;
+  height: 100%;
+}
+.activityCard1 img{
+  height: 25rem;
+}
+.activityCard2 img{
+  height: 13rem;
+}
+.activityCard3 img{
+  height: 10rem;
+}
+.activityCard4 img{
+  height: 25rem;
+}
+.activityCard5 img{
+  height: 11rem;
+}
+.activityCard6 img{
+  height: 10rem;
+}
 /* .activity {
   display: grid;
   column-gap: 2rem;
