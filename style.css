@@ -88,8 +88,13 @@ justify-content: space-between;
 .lodging-card-cover h5{
   margin: 5%;
 }
+.lodging-card-cover h5{
+  margin: 5%;
+}
 .lodging-card-cover img{
   border-radius: 1.25rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
   width: 100%;
   /*to be adjusted*/
   height: 7rem;
@@ -137,6 +142,10 @@ justify-content: space-between;
 .popular-image img{ 
     width: 100px;
     height: 100px;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 0rem;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 0rem;
 }
 
 .main {
