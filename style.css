@@ -71,7 +71,7 @@ justify-content: space-between;
 }
 .lodging-card {
   width: 300px;
-  height: 240px;
+ padding-bottom: 5px;
   background-color:white;
   border-radius: 1.25rem;
   border: solid 2px chocolate;
@@ -85,11 +85,9 @@ justify-content: space-between;
   height: 75%;
   margin:1%;
 }
+
 .lodging-card-cover h5{
-  margin: 5%;
-}
-.lodging-card-cover h5{
-  margin: 5%;
+  margin: 5% 5% 0 5%;
 }
 .lodging-card-cover img{
   border-radius: 1.25rem;
@@ -100,7 +98,7 @@ justify-content: space-between;
   height: 7rem;
 }
 .accommodation-description{
-  margin-left: 0.75rem;
+  margin: 2px 5%;
 }
 .housing-text{
     width: 100%;
@@ -111,7 +109,7 @@ justify-content: space-between;
   object-fit: cover;
 }
 .hostingMainCardGrade {
-  margin: 0 0.75rem 0.25rem 0.75rem;
+  margin: 0 5%;
 }
 .hostingMainCardGradeIcon[data-active=true] {
   color: #0065FC;
