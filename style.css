@@ -59,7 +59,10 @@ nav .container {
 justify-content: space-between;
   height: 500px;
   float: left; */
-
+  .housing-div-title{
+    width: 100%;
+    margin-left: 2%;
+}
 .lodging-container {
   justify-content: space-evenly;
   width: 70%;
@@ -100,10 +103,7 @@ justify-content: space-between;
 .accommodation-description{
   margin: 2px 5%;
 }
-.housing-text{
-    width: 100%;
-    margin-left: 2%;
-}
+
 .lodging-image {
   width: 100%;
   object-fit: cover;
@@ -126,20 +126,32 @@ justify-content: space-between;
   background-color: #F2F2F2;
   border-radius: 1.25rem;
 }
-
+.popular-div-title{
+  width: 100%;
+  margin-left: 5%;
+  /* display: flex;
+  justify-content: space-between; */
+}
 .popular-card{
   /* width: 13rem; */
   margin: 5% 5% 0% 5%;
   background-color: white;
   border-radius: 1.25rem;
+  height: 150px;
+}
+.chartIcon{
+  display: flex;
+  float:right;
+  margin: 0% 10%;
 }
 .popular-image{
   float: left;
   margin-right: 5%;
 }
 .popular-image img{ 
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    margin: 3%;
     border-bottom-left-radius: 1.25rem;
     border-bottom-right-radius: 0rem;
     border-top-left-radius: 1.25rem;
