@@ -79,6 +79,9 @@ justify-content: space-between;
   border-radius: 1.25rem;
   border: solid 2px chocolate;
 }
+.lodging-card:hover{
+  transform: scale(1.02)
+}
 .lodging-card figcaption p{
   margin-left: 4%;
 }
@@ -138,6 +141,9 @@ justify-content: space-between;
   background-color: white;
   border-radius: 1.25rem;
   height: 150px;
+}
+.popular-card:hover{
+  transform: scale(1.02)
 }
 .chartIcon{
   display: flex;
@@ -262,7 +268,7 @@ justify-content: space-between;
 }
 
 .searchFiltersFilter:hover {
-  background-color: #f3f8ff;
+  background-color: #0065fc;
   transform: scale(1.015);
 }
 
@@ -398,20 +404,23 @@ p {
   object-position: center;
   height: 100%;
 }
+.activityCardWrapimgImg:hover{
+  transform: scale(1.02)
+}
 .activityCard1 img{
   height: 25rem;
 }
 .activityCard2 img{
-  height: 13rem;
+  height: 10rem;
 }
 .activityCard3 img{
-  height: 10rem;
+  height: 7rem;
 }
 .activityCard4 img{
   height: 25rem;
 }
 .activityCard5 img{
-  height: 11rem;
+  height: 7rem;
 }
 .activityCard6 img{
   height: 10rem;
