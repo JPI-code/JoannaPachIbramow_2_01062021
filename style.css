@@ -20,25 +20,40 @@ p {
 nav .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   height: 50px;
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
+  flex-flow: column wrap;
+  border: 2px solid black;
+
+}
+nav {
+  height: 5rem;
 }
 
 .logo {
   width: 150px;
+  float:left;
 }
-
+.menu-second-column {
+  display: flex;
+  height: 100%;
+}
 .actions-wrapper {
+  border: 2px solid tomato;
+  height: 100%;
+  display: flex;
+}
+/* .actions-wrapper {
   display: flex;
   width: 20%;
   justify-content: space-between;
   height: 100%;
   align-items: center;
-}
+} */
 
 /* Overline effect on tabs of the menu when mouse over */
 .menu {
@@ -48,10 +63,17 @@ nav .container {
   /* TEXT effect when mouse over */
   color: #0065fc;
 }
+.menu1 {
+  float:right;
+}
 .menu1:hover {
   border-top: 2px solid #0065fc;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.sign-in {
+  float: right;
+  width: 4rem;
 }
 
 /*CONDITIONAL FORMATING FOR other VIEWPORTS*/
@@ -366,7 +388,7 @@ nav .container {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .housing-and-popular {
     flex-flow: column;
     width: 100%;
@@ -374,6 +396,12 @@ nav .container {
   }
   .lodging-container {
     width: 100%;
+    order:2;
+    background-color: white;
+  }
+  .popular-container{
+    width: 100%;
+    order:1;
   }
   .main {
     padding: auto;
@@ -382,6 +410,105 @@ nav .container {
 
 /* flexbox activity */
 .activity {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.activity img {
+  width: 100%;
+}
+
+
+.activity-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  height: 30rem;
+}
+
+.column {
+  width: 23%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.big-activity{
+  height: 100%;
+}
+
+.medium-activity{
+  height: 60%;
+}
+
+.small-activity{
+  height: 40%;
+}
+
+.activity-card{
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px #0000002e;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.activity-img{
+  height: calc(100% - 4rem);
+  object-fit: cover;
+}
+
+.activity-img:hover{
+  transform: scale(1.02);
+}
+
+.activity-card-title{
+  height: 4rem;
+  padding-left: 1rem;
+}
+
+.activityCardWrapimgImg:hover {
+  transform: scale(1.02);
+}
+@media screen and (max-width: 600px){
+.activity-content {
+  flex-flow: column nowrap;
+  height: auto;
+  gap:2rem;
+}
+.column {
+  width: 100%;
+  gap: 2rem;
+}
+.activity-card {
+  height: 15rem;
+}
+}
+/* .activityCard1 img {
+  height: 25rem;
+}
+.activityCard2 img {
+  height: 10rem;
+}
+.activityCard3 img {
+  height: 7rem;
+}
+.activityCard4 img {
+  height: 25rem;
+}
+.activityCard5 img {
+  height: 7rem;
+}
+.activityCard6 img {
+  height: 10rem;
+}
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+} */
+/* flexbox activity */
+/* .activity {
   display: flex;
   flex-flow: row wrap;
 }
@@ -438,10 +565,13 @@ nav .container {
 }
 .activityCardTitle {
   margin: 1.2rem 1.5rem;
-}
+} */
+
+@media screen and (max-width: 600px){
 .footer {
   background-color: #f2f2f2;
   width: 100%;
+}
 }
 
 .footerColumnwrapper {
@@ -465,4 +595,13 @@ nav .container {
 
 .footerColumnwrapperColumnLink:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+.footerColumnwrapper {
+  flex-flow: column nowrap;
+}
+.footerColumnwrapperColumn {
+width: 100%;
+padding:0;
+}
 }
