@@ -65,26 +65,19 @@
         <!-- Main menu-->
         <div class="container">
           <img class="logo" src="images/logo.png" alt="Logo" title="Reservia" />
-          <div class="menu-second-column">
-          <div class="actions-wrapper">
-            <div class="menu1">
-              <a class="menu" href="#hebergements" title="Cliquez ici"
-                >Hébergements</a
-              >
-            </div>
-            <div class="menu1">
-              <a class="menu" href="#activites" title="Cliquez ici"
-                >Activités</a
-              >
-            </div>
-            
-          </div>
-          <div class="sing-in">
-            <a class="menu" href="#S'inscrire" title="Créez son compte"
-              >S'inscrire</a
+
+          <div class="menu1 hebergement">
+            <a class="menu" href="#hebergements" title="Cliquez ici"
+              >Hébergements</a
             >
           </div>
-        </div>
+          <div class="menu1 activites">
+            <a class="menu" href="#activites" title="Cliquez ici">Activités</a>
+          </div>
+
+          <div class="sign-in">
+            <a class="menu" href="#" title="Créez son compte">S'inscrire</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -161,7 +154,6 @@
 
       <!--BEGINNING OF THE SECTION HOUSING & POPULAR-->
       <div class="housing-and-popular">
-        <!-- <div class="housing-wrapper"> -->
         <!-- SECTION FOR HOUSING ONLY-->
         <section class="lodging-container">
           <div class="housing-div-title">
@@ -420,32 +412,30 @@
                 />
               </div>
             </a>
-            <h5>
-              Hôtel Le Soleil du matin</h5>
-              <p>Nuit à partir <strong>128€</strong></p>
-              <div class="popularMainCardGrade">
-                <i
-                  class="fas fa-star hostingMainCardGradeIcon"
-                  data-active="true"
-                ></i>
-                <i
-                  class="fas fa-star hostingMainCardGradeIcon"
-                  data-active="true"
-                ></i>
-                <i
-                  class="fas fa-star hostingMainCardGradeIcon"
-                  data-active="true"
-                ></i>
-                <i
-                  class="fas fa-star hostingMainCardGradeIcon"
-                  data-active="true"
-                ></i>
-                <i
-                  class="fas fa-star hostingMainCardGradeIcon"
-                  data-active="true"
-                ></i>
-              </div>           
-
+            <h5>Hôtel Le Soleil du matin</h5>
+            <p>Nuit à partir <strong>128€</strong></p>
+            <div class="popularMainCardGrade">
+              <i
+                class="fas fa-star hostingMainCardGradeIcon"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star hostingMainCardGradeIcon"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star hostingMainCardGradeIcon"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star hostingMainCardGradeIcon"
+                data-active="true"
+              ></i>
+              <i
+                class="fas fa-star hostingMainCardGradeIcon"
+                data-active="true"
+              ></i>
+            </div>
           </article>
 
           <article class="popular-card">
@@ -460,9 +450,9 @@
             </a>
             <h5>
               Hôtel Au coeur de l'eau<br />
-                Chambres d'hôtes</h5>
-              <p>Nuit à partir <strong>71€</strong>
-            </p>
+              Chambres d'hôtes
+            </h5>
+            <p>Nuit à partir <strong>71€</strong></p>
             <div class="popularMainCardGrade">
               <i
                 class="fas fa-star hostingMainCardGradeIcon"
@@ -497,10 +487,8 @@
                 />
               </div>
             </a>
-            <h5>
-              Hôtel Tout Bleu et Blanc</h5>
-              <p>Nuit à partir <strong>68€</strong>
-            </p>
+            <h5>Hôtel Tout Bleu et Blanc</h5>
+            <p>Nuit à partir <strong>68€</strong></p>
             <div class="popularMainCardGrade">
               <i
                 class="fas fa-star hostingMainCardGradeIcon"
@@ -532,70 +520,63 @@
         <div class="activity-content">
           <div class="column">
             <a href="#" class="activity-card big-activity">
-              <!-- <div class="activityCardWrapimg"> -->
-                <img
-                  class="activity-img"
-                  src="images/vieux_port.jpg"
-                  alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond"
-                  title="Cliquez pour agrandir"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/vieux_port.jpg"
+                alt="Un port remplis de bateaux en premier plan avec une panorama de ville au fond"
+                title="Cliquez pour agrandir"
+              />
               <h4 class="activity-card-title">Vieux Port</h4>
             </a>
           </div>
           <div class="column">
             <a href="#" class="activity-card medium-activity">
-              <!-- <div class="activityCardWrapimg"> -->
-                <img
-                  class="activity-img"
-                  src="images/fort.jpg"
-                  alt="une colline rocailleuse beige avec un fort au sommet"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/fort.jpg"
+                alt="une colline rocailleuse beige avec un fort au sommet"
+              />
+
               <h4 class="activity-card-title">Fort de Pomègues</h4>
             </a>
             <a href="#" class="activity-card small-activity">
-              <!-- <div class="activityCardWrapimg small-activity"> -->
-                <img
-                  class="activity-img"
-                  src="images/iles.jpg"
-                  alt="des iles rocailleuse beige vues de loins"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/iles.jpg"
+                alt="des iles rocailleuse beige vues de loins"
+              />
+
               <h4 class="activity-card-title">Iles de Frioul</h4>
             </a>
           </div>
           <div class="column">
             <a href="#" class="activity-card big-activity">
-              <!-- <div class="activityCardWrapimg"> -->
-                <img
-                  class="activity-img"
-                  src="images/parcnational.jpg"
-                  alt="une falaise rocailleuse beige"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/parcnational.jpg"
+                alt="une falaise rocailleuse beige"
+              />
+
               <h4 class="activity-card-title">Parc National de Calanques</h4>
             </a>
           </div>
           <div class="column">
             <a href="#" class="activity-card small-activity">
-              <!-- <div class="activityCardWrapimg"> -->
-                <img
-                  class="activity-img"
-                  src="images/notredame.jpg"
-                  alt="Une église au sommet d'une colline rocailleuse beige"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/notredame.jpg"
+                alt="Une église au sommet d'une colline rocailleuse beige"
+              />
+
               <h4 class="activity-card-title">Notre Dame de la Garde</h4>
             </a>
             <a href="#" class="activity-card medium-activity">
-              <!-- <div class="activityCardWrapimg"> -->
-                <img
-                  class="activity-img"
-                  src="images/parclongchamp.jpg"
-                  alt="Majestueux batiment au pierres blanches"
-                />
-              <!-- </div> -->
+              <img
+                class="activity-img"
+                src="images/parclongchamp.jpg"
+                alt="Majestueux batiment au pierres blanches"
+              />
+
               <h4 class="activity-card-title">Parc Longchamp</h4>
             </a>
           </div>

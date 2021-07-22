@@ -19,83 +19,94 @@ p {
 }
 nav .container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 50px;
+  gap: 3rem;
+  align-items: center;
   max-width: 1440px;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
-  flex-flow: column wrap;
-  border: 2px solid black;
-
-}
-nav {
-  height: 5rem;
 }
 
 .logo {
   width: 150px;
   float:left;
+  margin-right: auto;
 }
-.menu-second-column {
-  display: flex;
-  height: 100%;
-}
-.actions-wrapper {
-  border: 2px solid tomato;
-  height: 100%;
-  display: flex;
-}
-/* .actions-wrapper {
-  display: flex;
-  width: 20%;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-} */
 
 /* Overline effect on tabs of the menu when mouse over */
 .menu {
   height: 100%;
 }
-.menu:hover {
+.menu:hover, .sign-in{
   /* TEXT effect when mouse over */
   color: #0065fc;
 }
 .menu1 {
-  float:right;
+  border-top: 2px solid transparent;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .menu1:hover {
   border-top: 2px solid #0065fc;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .sign-in {
   float: right;
-  width: 4rem;
+  /* width: 4rem; */
+  font-weight: bold;
 }
 
 /*CONDITIONAL FORMATING FOR other VIEWPORTS*/
-/* @media screen and (min-width: 601px){ 
-}
 
 @media screen and (max-width: 600px) {
-  main {
-    max-width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
+  body{
+    margin:0;
+  }
+  nav .container {
+   flex-flow: row wrap; 
+   height: 100%;
+   /* border: 2px solid blue; */
+   align-items: center;
+   gap:0;
+   padding:0;
+   margin:0;
+  }
+  .logo {
+    order:1;
+    padding: 1rem;
+  }
+  .sign-in {
+    order:2;
+    padding: 1rem;
   }
   .menu {
-    display: flex;
-    align-items: center;
-    grid-area: button;
-    padding: 2rem;
-    color: #0065FC;
-    font-weight: 600;
+    margin:auto;
   }
-} */
+  .menu1 {
+  order:3;
+   padding:0;
+   margin:0;
+   border-top:0;
+   border-bottom: 2px solid transparent;
+   text-align: center;
+  }
+  .menu1:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: 0;
+  }
+  .hebergement {
+    width: 50%;
+    /* border: 2px solid red; */
+  }
+  .activites {
+    flex: 1;
+    /* border: 2px solid red; */
+  }
+}
+
+
 .searchHeaderTitle {
   margin-bottom: 0.5rem;
 }
@@ -270,7 +281,6 @@ nav {
 .housing-and-popular {
   display: flex;
   flex-flow: row nowrap;
-  border: red solid 2px;
   justify-content: space-between;
 }
 .housing-div-title {
@@ -291,7 +301,6 @@ nav {
   padding-bottom: 5px;
   background-color: white;
   border-radius: 1.25rem;
-  border: solid 2px chocolate;
 }
 .lodging-card:hover {
   transform: scale(1.02);
@@ -399,13 +408,16 @@ nav {
     order:2;
     background-color: white;
   }
+  .lodging-card{
+    box-shadow: 0 0 20px #0000002e;
+  }
   .popular-container{
     width: 100%;
     order:1;
   }
-  .main {
+  /* .main {
     padding: auto;
-  }
+  } */
 }
 
 /* flexbox activity */
@@ -486,86 +498,7 @@ nav {
   height: 15rem;
 }
 }
-/* .activityCard1 img {
-  height: 25rem;
-}
-.activityCard2 img {
-  height: 10rem;
-}
-.activityCard3 img {
-  height: 7rem;
-}
-.activityCard4 img {
-  height: 25rem;
-}
-.activityCard5 img {
-  height: 7rem;
-}
-.activityCard6 img {
-  height: 10rem;
-}
-.activityCardTitle {
-  margin: 1.2rem 1.5rem;
-} */
-/* flexbox activity */
-/* .activity {
-  display: flex;
-  flex-flow: row wrap;
-}
-.activity img {
-  width: 100%;
-}
-.activityTitle {
-  width: 100%;
-}
-.activity-content {
-  display: flex;
-  flex-flow: row nowrap;
-  border: solid 2px blue;
-  justify-content: space-between;
-}
-.column {
-  width: 20%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}
-.activityCard {
-  border-radius: 1.25rem;
-  overflow: hidden;
-  box-shadow: 0 0 20px #0000002e;
-}
 
-
-.activityCardWrapimgImg {
-  object-fit: none;
-  object-position: center;
-  height: 100%;
-}
-.activityCardWrapimgImg:hover {
-  transform: scale(1.02);
-}
-.activityCard1 img {
-  height: 25rem;
-}
-.activityCard2 img {
-  height: 10rem;
-}
-.activityCard3 img {
-  height: 7rem;
-}
-.activityCard4 img {
-  height: 25rem;
-}
-.activityCard5 img {
-  height: 7rem;
-}
-.activityCard6 img {
-  height: 10rem;
-}
-.activityCardTitle {
-  margin: 1.2rem 1.5rem;
-} */
 
 @media screen and (max-width: 600px){
 .footer {
