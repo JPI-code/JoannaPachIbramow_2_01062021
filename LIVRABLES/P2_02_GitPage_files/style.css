@@ -54,18 +54,20 @@ nav .container {
 }
 .sign-in {
   float: right;
+  /* width: 4rem; */
   font-weight: bold;
 }
 
 /*CONDITIONAL FORMATING FOR other VIEWPORTS*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   body{
     margin:0;
   }
   nav .container {
    flex-flow: row wrap; 
    height: 100%;
+   /* border: 2px solid blue; */
    align-items: center;
    gap:0;
    padding:0;
@@ -96,9 +98,11 @@ nav .container {
   }
   .hebergement {
     width: 50%;
+    /* border: 2px solid red; */
   }
   .activites {
     flex: 1;
+    /* border: 2px solid red; */
   }
 }
 
@@ -240,7 +244,7 @@ nav .container {
   margin: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .searchForm {
     display: flex;
     width: 100%;
@@ -256,7 +260,7 @@ nav .container {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .searchFiltersTitle {
     width: 100%;
   }
@@ -293,7 +297,7 @@ nav .container {
   gap: 0.5rem;
 }
 .lodging-card {
-  width: 250px;
+  width: 300px;
   padding-bottom: 5px;
   background-color: white;
   border-radius: 1.25rem;
@@ -342,7 +346,7 @@ nav .container {
   display: flex;
   flex-flow: column nowrap;
   float: right;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 25%;
   background-color: #f2f2f2;
   border-radius: 1.25rem;
@@ -393,7 +397,7 @@ nav .container {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .housing-and-popular {
     flex-flow: column;
     width: 100%;
@@ -406,12 +410,14 @@ nav .container {
   }
   .lodging-card{
     box-shadow: 0 0 20px #0000002e;
-    width: 100%;
   }
   .popular-container{
     width: 100%;
     order:1;
   }
+  /* .main {
+    padding: auto;
+  } */
 }
 
 /* flexbox activity */
@@ -478,7 +484,7 @@ nav .container {
 .activityCardWrapimgImg:hover {
   transform: scale(1.02);
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
 .activity-content {
   flex-flow: column nowrap;
   height: auto;
@@ -494,7 +500,7 @@ nav .container {
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
 .footer {
   background-color: #f2f2f2;
   width: 100%;
@@ -523,7 +529,7 @@ nav .container {
 .footerColumnwrapperColumnLink:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 .footerColumnwrapper {
   flex-flow: column nowrap;
 }
